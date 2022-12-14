@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.ContentObserverDemo.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.ContentObserverDemo.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/flightModeOpen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="开始飞行模式监听"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/flightModeTip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical"
+        android:text="当前飞行模式："
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/timeModeOpen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="时间12/24格式监听"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/timeModeTip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical"
+        android:text="当前时间格式："
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/wifiOpen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="wifi开启监听"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/wifiTip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical"
+        android:text="当前Wifi："
+        android:textColor="@color/black" />
+
+</LinearLayout>
